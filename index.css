@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.logo-img {
+    width: 127px;
+    height: 60px;
+}
+
+.user-img {
+    height: 34px;
+    border-radius: 50%;
+    
+}
+
+.post-img {
+    width: 100%;
+}
+
+.interact-icons {
+    margin-top: 20px;
+}
+
+.icon:hover {
+    opacity: .6;
+}
+
+.icon {
+    padding-right: 5px;
+    width: 30px;
+}
+
+.post-user-img {
+    display: inline;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.break {
+    display: block;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.interact-icons, 
+.wrapper,
+.user-comment,
+.likes {
+    padding-left: 10px;
+}
+
+.post {
+    margin-bottom: 25px;
+}
+
+.p-r {
+    padding-right: 4px;
+}
+.post-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.heart-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+@keyframes popHeart {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
